@@ -1,0 +1,24 @@
+.nav {
+    overflow: hidden;
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 106px;
+    margin-top: -186px;
+    padding: 40px;
+
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+}
+
+.navItem {
+    font-family: Arial Narrow;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    text-align: left;
+    color: #52FF00;
+
+}

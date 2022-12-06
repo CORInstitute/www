@@ -1,0 +1,14 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    padding: 40px;
+}
+
+.flavorBlue {
+    background-color: #000AFF;
+    color: #52FF00;
+}
+
+.flavorWhite {
+    color: #000AFF;
+}
