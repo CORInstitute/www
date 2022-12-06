@@ -18,7 +18,6 @@
 .flavorBlack {
     color: white;
     background-color: black;
-    /* padding-top: 220px */
 }
 
 .flavorBlack>p {
@@ -26,4 +25,14 @@
     text-align: center;
     line-height: 33.75px;
     letter-spacing: -0.03em;
+    margin: 1em;
+}
+
+@media (max-width: 900px) {
+    .flavorBlack>p {
+        font-size: 14px;
+        text-align: center;
+        line-height: 16px;
+        letter-spacing: 0em;
+    }
 }

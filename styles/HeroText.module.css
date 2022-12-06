@@ -4,22 +4,33 @@
     line-height: 133px;
     letter-spacing: -0.03em;
     text-align: center;
-    max-width: 1586px;
-    margin: 0;
+    max-width: min(80%, 1580px);
+    margin: 0 auto;
 }
+
 
 .flavorBlue {
     color: #52FF00;
 }
 
 .flavorWhite {
-    font-family: Arial Narrow;
-    font-size: 175px;
     font-weight: 700;
-    line-height: 133px;
-    letter-spacing: -0.03em;
-    text-align: center;
     color: #52FF00;
 
     -webkit-text-stroke: 3px #000AFF;
+}
+
+
+@media (max-width: 900px) {
+    .hero {
+        font-size: 64px;
+        line-height: 80px;
+    }
+
+    .flavorWhite {
+        font-size: 48px;
+        line-height: 50px;
+        ;
+        -webkit-text-stroke: 1px #000AFF;
+    }
 }

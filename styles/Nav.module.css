@@ -22,3 +22,13 @@
     color: #52FF00;
 
 }
+
+@media (max-width: 900px) {
+    .navItem {
+        font-size: 18px;
+    }
+
+    .nav> :first-child {
+        display: none;
+    }
+}
