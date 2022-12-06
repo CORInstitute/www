@@ -13,22 +13,25 @@ export default function Nav() {
     const [iconColor, setIconColor] = useState<string>('#000AFF')
 
     const intersectCallback = useCallback((entries: IntersectionObserverEntry[]) => {
-        const [entry] = entries
+        entries.forEach(entry => {
+            // If blue screen is in the viewport
+            if (entry.target === blueScreenRef.current && entry.intersectionRatio > 0.8) {
+                setIconContainerColor(green)
+                setIconColor(blue)
+            }
+            // If white screen is in the viewport
+            else if (entry.target === whiteScreenRef.current && entry.intersectionRatio > 0.8) {
+                setIconContainerColor(blue)
+                setIconColor(white)
+            }
+            // If black screen is in the viewport
+            else if (entry.target === blackScreenRef.current && entry.intersectionRatio > 0.8) {
+                setIconColor(black)
+                setIconContainerColor(white)
+            }
+        })
 
-        console.log('blue?', entry.target === blueScreenRef.current, 'intersecting?', entry.isIntersecting)
-        console.log('white?', entry.target === whiteScreenRef.current, 'intersecting?', entry.isIntersecting)
-        // If blue screen has left the viewport
-        if (entry.target === blueScreenRef.current && !entry.isIntersecting) {
-            setIconContainerColor(blue)
-            setIconColor(white)
-        }
-        // If white screen has left the viewport
-        if (entry.target === whiteScreenRef.current && !entry.isIntersecting) {
-            setIconContainerColor(green)
-            setIconColor(blue)
-        }
 
-        console.log({ entries })
     }, []);
 
     useEffect(() => {
@@ -38,7 +41,8 @@ export default function Nav() {
         const options = {
             root: null,
             rootMargin: '0px',
-            threshold: 0
+            // use a few thresholds, it seems to have a higher refresh rate this way
+            threshold: [0.5, 0.9, 1]
         }
         const observer = new IntersectionObserver(intersectCallback, options);
 
@@ -66,8 +70,6 @@ export default function Nav() {
 
         }
     }, [intersectCallback, blueScreenRef, whiteScreenRef, blackScreenRef, navRef])
-
-    console.log({ iconColor, iconContainerColor })
 
     return (
         <nav className={styles.nav} ref={navRef}>

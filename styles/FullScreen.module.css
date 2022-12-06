@@ -1,7 +1,9 @@
 .container {
     height: 100vh;
     width: 100vw;
-    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .flavorBlue {
@@ -15,4 +17,13 @@
 
 .flavorBlack {
     color: white;
+    background-color: black;
+    /* padding-top: 220px */
+}
+
+.flavorBlack>p {
+    font-size: 36px;
+    text-align: center;
+    line-height: 33.75px;
+    letter-spacing: -0.03em;
 }
