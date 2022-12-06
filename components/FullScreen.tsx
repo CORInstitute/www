@@ -1,11 +1,11 @@
-import { ReactNode } from "react";
+import { MutableRefObject, ReactNode } from "react";
 import styles from "../styles/FullScreen.module.css"
 
 export enum FullScreenFlavor {
     BLUE, WHITE, BLACK
 }
 
-export default function FullScreen({ children, flavor }: { children: ReactNode, flavor: FullScreenFlavor }) {
+export default function FullScreen({ children, flavor, innerRef }: { children: ReactNode, flavor: FullScreenFlavor, innerRef: MutableRefObject<any> }) {
     let flavorStyle;
     switch (flavor) {
         case FullScreenFlavor.BLUE:
@@ -20,7 +20,7 @@ export default function FullScreen({ children, flavor }: { children: ReactNode, 
     }
 
     return (
-        <div className={`${styles.container} ${flavorStyle}`}>
+        <div className={`${styles.container} ${flavorStyle}`} ref={innerRef}>
             {children}
         </div>
     )

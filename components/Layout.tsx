@@ -8,7 +8,7 @@ export default function Layout({ children }: { children: ReactNode }) {
         <>
             <Head>
                 <meta charSet="utf-8" />
-                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <meta name="iewport" content="initial-scale=1.0, width=device-width" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="" />
                 <meta name="twitter:title" content="Creator Ownership Research Institute" />
