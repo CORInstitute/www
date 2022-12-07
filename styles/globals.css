@@ -1,3 +1,13 @@
 body {
     margin: 0 auto;
 }
+
+a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: #52FF00;
+}
+
+a:visited {
+    color: inherit
+}
