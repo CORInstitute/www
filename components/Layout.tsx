@@ -1,11 +1,27 @@
 import { ReactNode } from "react";
 import Head from 'next/head';
 import Nav from "./Nav";
+import localFont from "@next/font/local";
+
+const arialNarrow = localFont({
+    src: [
+        {
+            path: '../public/arialNarrow.ttf',
+            weight: '400',
+            style: 'normal'
+        },
+        {
+            path: '../public/arialNarrowBold.ttf',
+            weight: '700',
+            style: 'normal'
+        }
+    ]
+})
 
 
 export default function Layout({ children }: { children: ReactNode }) {
     return (
-        <>
+        <div className={arialNarrow.className}>
             <Head>
                 <meta charSet="utf-8" />
                 <meta name="iewport" content="initial-scale=1.0, width=device-width" />
@@ -23,6 +39,6 @@ export default function Layout({ children }: { children: ReactNode }) {
             </Head>
             <Nav />
             <main>{children}</main>
-        </>
+        </div>
     )
 }
