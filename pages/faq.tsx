@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useContext } from "react";
 import FullScreen, { FullScreenFlavor } from "../components/FullScreen";
 import HeroText from "../components/HeroText";
