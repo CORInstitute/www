@@ -21,7 +21,7 @@
 
 .flavorBlack>div {
     max-width: 1200px;
-    padding: auto 40px;
+    padding: 0 20px 60px;
     margin: 0 auto;
 }
 
@@ -54,6 +54,8 @@
         letter-spacing: -0.03em;
     }
     .flavorBlack h2 {
+        font-size: 30px;
+        line-height: 32px;
         -webkit-text-stroke: 1px #000AFF;
     }
 }
