@@ -113,8 +113,8 @@ export default function FAQ() {
           </p>
 
           <p>
-            Until that formal governance mechanism is established, the CORI forum
-            (linked) will house all discussions on how to evolve industry towards
+            Until that formal governance mechanism is established, <a href="https://cori.discourse.group/" target="_blank" rel="noopener noreferrer">the CORI forum</a>&nbsp;
+            will house all discussions on how to evolve industry towards
             an improved “v2” standard. It is open and encouraged for anyone to
             participate in the conversation.
           </p>
