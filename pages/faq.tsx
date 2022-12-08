@@ -24,15 +24,16 @@ export default function FAQ() {
       </Head>
       <FullScreen flavor={FullScreenFlavor.BLUE} innerRef={blueScreenRef}>
         <HeroText flavor={FullScreenFlavor.BLUE}>
-          FREQUENTLY ASKED QUESTIONS
+          FAQS
         </HeroText>
       </FullScreen>
       <Text flavor={FullScreenFlavor.BLACK} innerRef={blackScreenRef}>
         <div>
           <h2>What are the goals of the CORI?</h2>
           <p>
-            The CORI’s long term ambition is to create & govern sustainable tools
-            and standards for protecting creator royalties in the NFT ecosystem.
+            The CORI’s long term ambition is to create & govern sustainable
+            tools and standards for protecting creator royalties in the NFT
+            ecosystem.
           </p>
           <p>
             In the short-term, that ambition translates into the following
