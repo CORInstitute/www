@@ -11,12 +11,7 @@ export default function FAQ() {
     <>
       <FullScreen flavor={FullScreenFlavor.BLUE} innerRef={blueScreenRef}>
         <HeroText flavor={FullScreenFlavor.BLUE}>
-          CREATOR OWNERSHIP RESEARCH INSTITUTE
-        </HeroText>
-      </FullScreen>
-      <FullScreen flavor={FullScreenFlavor.WHITE} innerRef={whiteScreenRef}>
-        <HeroText flavor={FullScreenFlavor.WHITE}>
-          CORI answers frequently asked questions
+          FREQUENTLY ASKED QUESTIONS
         </HeroText>
       </FullScreen>
       <Text flavor={FullScreenFlavor.BLACK} innerRef={blackScreenRef}>

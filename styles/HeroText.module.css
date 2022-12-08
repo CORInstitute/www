@@ -6,6 +6,7 @@
     text-align: center;
     max-width: min(80%, 1580px);
     margin: 0 auto;
+    overflow-wrap: break-word;
 }
 
 
