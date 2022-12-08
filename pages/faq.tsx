@@ -9,6 +9,19 @@ export default function FAQ() {
     useContext(ViewportContext);
   return (
     <>
+      <Head>
+        <meta
+          name="twitter:title"
+          content="FAQs / Creator Ownership Research Institute"
+        />
+        <meta
+          name="twitter:description"
+          content="The COR Institute creates and funds sustainable ownership tools for artists"
+        />
+        <title>
+          FAQs / The COR Institute creates and funds sustainable ownership tools for artists
+        </title>
+      </Head>
       <FullScreen flavor={FullScreenFlavor.BLUE} innerRef={blueScreenRef}>
         <HeroText flavor={FullScreenFlavor.BLUE}>
           FREQUENTLY ASKED QUESTIONS
