@@ -30,9 +30,9 @@
 
 @media (max-width: 900px) {
     .flavorBlack>p {
-        font-size: 14px;
+        font-size: 20px;
         text-align: center;
-        line-height: 16px;
-        letter-spacing: 0em;
+        line-height: 22px;
+        letter-spacing: -0.03em;
     }
 }
