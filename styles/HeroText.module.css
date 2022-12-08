@@ -6,6 +6,7 @@
     text-align: center;
     max-width: min(80%, 1580px);
     margin: 0 auto;
+    overflow-wrap: break-word;
 }
 
 
@@ -30,7 +31,6 @@
     .flavorWhite {
         font-size: 48px;
         line-height: 50px;
-        ;
         -webkit-text-stroke: 1px #000AFF;
     }
 }

@@ -36,6 +36,7 @@ export default function Layout({ children }: { children: ReactNode }) {
                     name="twitter:image"
                     content="/public/TwitterBanner.png"
                 />
+                <title>The COR Institute creates and funds sustainable ownership tools for artists</title>
             </Head>
             <Nav />
             <main>{children}</main>

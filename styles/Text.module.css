@@ -1,0 +1,61 @@
+.container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flavorBlue {
+    background-color: #000AFF;
+    color: #52FF00;
+}
+
+.flavorWhite {
+    color: #000AFF;
+}
+
+.flavorBlack {
+    color: white;
+    background-color: black;
+}
+
+.flavorBlack>div {
+    max-width: 1200px;
+    padding: 0 20px 60px;
+    margin: 0 auto;
+}
+
+.flavorBlack h2,
+.flavorBlack li,
+.flavorBlack p {
+    font-size: 36px;
+    text-align: center;
+    line-height: 33.75px;
+    letter-spacing: -0.03em;
+    margin: 1em;
+    font-weight: normal;
+}
+
+.flavorBlack h2 {
+    margin-top: 2em;
+    font-size: 52px;
+    line-height: 53.75px;
+    font-weight: 700;
+    -webkit-text-stroke: 2px #000AFF;
+}
+
+@media (max-width: 900px) {
+    .flavorBlack h2,
+    .flavorBlack li,
+    .flavorBlack p {
+        font-size: 20px;
+        text-align: center;
+        line-height: 22px;
+        letter-spacing: -0.03em;
+    }
+    .flavorBlack h2 {
+        font-size: 30px;
+        line-height: 32px;
+        -webkit-text-stroke: 1px #000AFF;
+    }
+}
